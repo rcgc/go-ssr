@@ -7,6 +7,12 @@ import (
 	"net/http"
 )
 
+/*
+	Recommended remaining topics:
+		Escape: allows protect info when sent by a form and
+				cast it in order to avoid injection
+*/
+
 func main() {
 	myFunctions := template.FuncMap{
 		"usd": func(a float64) string {
